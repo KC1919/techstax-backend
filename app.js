@@ -27,7 +27,6 @@ app.post('/placeOrder', (req, res, next) => {
             receipt: "order_rcptid_11"
         };
         instance.orders.create(options, function (err, order) {
-            console.log(order);
 
             return res.status(200).json({
                 message: 'Order placed successfully!',
