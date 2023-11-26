@@ -10,7 +10,7 @@ dotenv.config()
 app.use(express.json());
 
 app.use(cors({
-    origin: ['http://127.0.0.1:3000'],
+    origin: ['https://techstax-frontend.vercel.app/'],
     credentials: true
 }));
 
